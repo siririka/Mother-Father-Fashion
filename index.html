@@ -427,10 +427,11 @@
                         </div>
                     </div>
 
-                    <div class="px-5 pb-5 pt-0">
-                      <button onclick="event.stopPropagation(); window.open('${product.partnersUrl}', '_blank')" class="w-full bg-[#e31f31] hover:bg-[#c91929] text-white font-bold py-3 px-4 rounded-xl text-sm transition shadow-md flex items-center justify-center gap-1.5">
-     🚀 쿠팡에서 바로 구매하기
-</button>
+                  <div class="px-5 pb-5 pt-0">
+    <a href="${product.partnersUrl}" target="_blank" onclick="event.stopPropagation();" class="w-full bg-[#e31f31] hover:bg-[#c91929] text-white font-bold py-3 px-4 rounded-xl text-sm transition shadow-md flex items-center justify-center gap-1.5 text-decoration-none" style="display: flex;">
+        🚀 상세보기 및 구매하기 🚀
+    </a>
+</div>
                     </div>
                 `;
                 grid.appendChild(card);
